@@ -1,0 +1,16 @@
+.close-btn {
+  position: absolute;
+  right: 21%;
+  transform: translateY(95%);
+  z-index: 2;
+}
+.add-button {
+  margin-left: 48%;
+  color: #fff;
+  background-color: #b2dd1d;
+  border-color: #b2dd1d;
+}
+.add-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+}

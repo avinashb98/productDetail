@@ -1,0 +1,27 @@
+.itemForm {
+  padding: 20px 150px 20px 150px;
+  margin-left: 20%;
+  position: relative;
+  width: 60%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #b2dd1d;
+}
+.close-button {
+  position: absolute;
+  right: 90px;
+  transform: translateY(32px);
+
+}
+.and-or-button {
+  position: absolute;
+  left: 20px;
+  transform: translateY(25px);
+}
+.add-button {
+  position: absolute;
+  left: 50px;
+  color: #fff;
+  background-color: #b2dd1d;
+  border-color: #b2dd1d;
+}

@@ -1,0 +1,45 @@
+<div class="itemForm">
+  <div *ngFor="let c of item.category">
+    <button [hidden]="item.category.indexOf(c) === 0" class="btn and-or-button">
+      <select id="and-or" class="form-control">
+        <option>AND</option>
+        <option>OR</option>
+      </select>
+    </button>
+
+    <button [hidden]="item.category.indexOf(c) === 0" name="button" class="btn
+    btn-outline-secondary close-button"
+      (click)="close(c)">X</button>
+    <label for="category">
+      Category <span style="color: red;">*</span>
+    </label>
+    <select id="category" class="form-control"
+        required >
+      <option *ngFor="let c of fetchedCategories" [value]="c">{{c}}</option>
+    </select>
+    <br>
+  </div>
+
+  <button class="btn btn-success add-button" name="button"
+  (click)="addCategory()">+</button>
+  <br><br>
+
+  <div class="form-row">
+
+    <div class="col">
+      <label for="name">Product</label>
+      <input type="text" id="name" class="form-control">
+    </div>
+
+    <div class="col">
+      <label for="quantity">Quantity <span style="color: red;">*</span></label>
+      <input type="number" id="quantity" class="form-control"required>
+    </div>
+
+    <div class="col">
+      <label for="amount">Amount <span style="color: red;">*</span></label>
+      <input type="number" id="name" class="form-control"required>
+    </div>
+  </div>
+
+</div>

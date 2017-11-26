@@ -1,0 +1,9 @@
+<app-form-component></app-form-component>
+<br><br>
+<button class="btn btn-success add-button" name="button" (click)="addItem()"
+[disabled]="addClicked">Add</button>
+<br><br>
+<button class="btn btn-outline-danger close-btn" (click)="toggleAddClicked()" [hidden]="!addClicked" style="float: right;">X</button>
+<br>
+<app-form-component [hidden]="!addClicked"></app-form-component>
+<br><br>
